@@ -11,6 +11,7 @@ exports.html = tasks.html;
 exports.rastr = tasks.rastr;
 exports.webp = tasks.webp;
 exports.svg_sprite = tasks.svg_sprite;
+exports.svg_sprite_build = tasks.svg_sprite_build;
 exports.ttf_to_woff = tasks.ttf_to_woff;
 exports.fonts = tasks.fonts;
 exports.browser_sync = tasks.browser_sync;
@@ -24,6 +25,7 @@ exports.default = parallel(
 	exports.rastr,
 	exports.webp,
 	exports.svg_sprite,
+	exports.svg_sprite_build,
 	exports.ttf_to_woff,
 	exports.fonts,
     exports.styles,
