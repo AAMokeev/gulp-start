@@ -14,7 +14,7 @@ module.exports = function libs_js(done) {
             .pipe(uglify())
             .pipe(concat('libs.min.js'))
             .pipe(sourcemaps.write('../sourcemaps/'))
-            .pipe(multiDest('build/js'))
+            .pipe(dest('build/js'))
     } else {
         return done(console.log(chalk.bgYellow.black('No added JS plugins')));
     }   
