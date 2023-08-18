@@ -10,7 +10,7 @@ const browserSync = require('browser-sync');
 const multiDest = require('gulp-multi-dest');
 
 module.exports = function styles() {
-    return src(['src/scss/**/*.scss', '!src/scss/template/**/*.scss'])
+    return src(['src/scss/init.scss', '!src/scss/template/**/*.scss'])
         .pipe(sourcemaps.init())
         .pipe(bulkSass())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
